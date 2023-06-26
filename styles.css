@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.home {
+
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+
+
+.logo {
+    max-width: 80px;
+    position: relative;
+    right: 80px;
+}
+
+.nav {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 300px;
+
+}
+
+p,
+h2,
+ul,
+h3 {
+    color: white;
+
+
+}
+
+p {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.list {
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.content {
+    position: 90px;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-text h2 {
+    width: 100%;
+    max-width: 600px;
+    color: green;
+
+}
+
+.content.text p {
+    font-weight: 400;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background-color: green;
+    color: beige;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.content.image {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.content.image img {
+    max-width: 450px;
+}
+
+@media(max-width:991px) {
+    .main {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        max-width: 70px;
+    }
+
+    .content.image img {
+        max-width: 350px;
+
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 120px 0;
+    }
+
+    .content.text {
+        max-width: 100%;
+    }
+
+    .content.text h2 {
+        font-size: 4rem;
+
+    }
+
+    .btn {
+        font-size: 1em;
+
+    }
+
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.noads {
+    width: 80px;
+    position: relative;
+    bottom: 100px;
+    right: 600px;
+    padding-top: 50px;
+    bottom: 120px;
+    margin-right: 5px;
+    margin-left: 500px;
+
+}
+
+.download {
+    width: 110px;
+    position: relative;
+    bottom: 100px;
+    right: 600px;
+    padding-top: 30px;
+    bottom: 120px;
+    margin-top: 5px;
+    margin-right: 50px;
+
+
+}
+
+.pre {
+    display: flex;
+}
+
+.play {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 100px;
+    right: 600px;
+
+    bottom: 120px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.hf {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 100px;
+    right: 600px;
+
+    bottom: 120px;
+    margin-top: 50px;
+
+}
+
+figcaption {
+    color: white;
+    width: 100px;
+    position: relative;
+}
+
+figcaption {
+    right: 550px;
+    bottom: 120px;
+}
+
+.first {
+    position: relative;
+    right: 60px;
+}
+.first figcaption{
+    left:-65px;
+}
+.photosec{
+    padding-top: 80px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+  }
+  
+  .social a .bx{
+    padding: 5px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+   
+  
+  }
+  
+  .social a .bx:hover{
+    background: var(--main-color);
+   
+  }
+  
+  .links{
+    margin: 1rem 0 1rem;
+  }
+  .links a {
+    font-size: 1rem;
+    font-weight:500 ;
+    color: var(white);
+    padding: 1rem;
+  }
+  
+  .links a:hover{
+    color: var(white);
+  }
+  
+  .contact p{
+    text-align: center;
+  }
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+    background:black;
+    gap: 1.5rem;
+  }
+  
+
+  .aboutimg{
+    width: 400px ;
+    height: 400px;
+    padding-left: 10px;
+    
+    padding-bottom: 50px;
+    
+  }
+  
+  .about-text{
+    flex: 1 1 17rem;
+  
+  }
+  
+  .about-text h2{
+    font-size: 1.2rem;
+    color: var(white);
+  
+  }
+  
+  .about-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+  }
+.const{
+    margin-right: 500px;
+}
+
+.cont{
+    margin-top: 140px;
+}
+.cont li{
+    position: relative;
+    align-items: center;
+    margin-right: 600px;
+}
+.const .list h3{
+    padding-top: 60px;
+    
+}
+.home .content .home-text h3{
+    padding-bottom: 0px;
+}
+.home .content .home-text button {
+    width: 100px;
+   
+border-radius: 20px;
+background-color: green;
+margin-top: 2rem;
+margin-bottom: 2rem;
+color: white;
+padding: 15px 5px 15px 5px;
+width: 200.4px;
+font-size:15px;
+}
+
+
+
+
+.home .content .home-text button:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+  
+}
+.cont .list h3{
+    padding-bottom: 10px;
+}
+.photosec{
+    padding-left: 210px;
+}
